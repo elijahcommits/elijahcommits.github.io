@@ -1,0 +1,68 @@
+
+/* global */
+
+* {
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: aliceblue;
+  text-align: center;
+  font-family: sans-serif;
+}
+
+section {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+/* header */
+
+.main_title {
+  margin-top: 0.5rem;
+  font-size: 1.8rem;
+  font-weight: 900;
+}
+
+.main_subtitle {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+/* social links */
+
+.social-links a {
+  text-decoration: none;
+  display: block;
+  margin: 0.5rem;
+}
+
+.social-links__user {
+  font-size: 1.2em;
+}
+
+.social-links__user:hover {
+  text-decoration: underline;
+}
+
+.social-links__site {
+  color: black;
+}
+
+/* my sites */
+
+.my-sites .site {
+  margin: 1rem;
+}
+
+.my-sites a {
+  text-decoration: none;
+  font-size: 1.2em;
+}
+
+.my-sites a:hover {
+  text-decoration: underline;
+}
