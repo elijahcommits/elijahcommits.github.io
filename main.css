@@ -27,8 +27,9 @@ section {
 }
 
 .main_subtitle {
+  color: hsl(0, 0%, 28%);
   font-size: 1rem;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
   letter-spacing: 1px;
 }
 
