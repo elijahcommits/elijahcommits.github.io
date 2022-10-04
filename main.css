@@ -14,14 +14,21 @@ body {
 }
 
 section {
-  margin-top: 3rem;
-  margin-bottom: 4rem;
+  margin-top: 2rem;
+  margin-bottom: 2.5rem;
 }
 
 /* header */
 
-.main_title {
+header .avatar {
+  max-height: 100px;
+  max-width: 100px;
   margin-top: 0.5rem;
+  border-radius: 1000px;
+}
+
+.main_title {
+  margin-top: 0.1rem;
   font-size: 1.8rem;
   font-weight: 900;
 }
@@ -29,7 +36,6 @@ section {
 .main_subtitle {
   color: hsl(0, 0%, 28%);
   font-size: 1rem;
-  /* text-transform: uppercase; */
   letter-spacing: 1px;
 }
 
@@ -37,8 +43,8 @@ section {
 
 .social-links a {
   text-decoration: none;
-  display: block;
-  margin: 0.5rem;
+  display: inline-block;
+  margin: 0.5rem 0.33rem;
 }
 
 .social-links__user {
@@ -66,4 +72,9 @@ section {
 
 .my-sites a:hover {
   text-decoration: underline;
+}
+
+.my-sites .favicon__site {
+  max-width: 16px;
+  max-height: 16px;
 }
