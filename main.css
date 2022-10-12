@@ -14,7 +14,7 @@ body {
 }
 
 section {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
   margin-bottom: 2.5rem;
 }
 
@@ -35,7 +35,7 @@ header .avatar {
 
 .main_subtitle {
   color: hsl(0, 0%, 28%);
-  font-size: 1rem;
+  font-size: 0.8rem;
   letter-spacing: 1px;
 }
 
@@ -62,7 +62,7 @@ header .avatar {
 /* my sites */
 
 .my-sites .site {
-  margin: 1rem;
+  margin: 0.75rem;
 }
 
 .my-sites a {
