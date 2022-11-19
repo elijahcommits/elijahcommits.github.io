@@ -18,6 +18,12 @@ section {
   margin-bottom: 2.5rem;
 }
 
+/* Utility */
+
+em {
+  font-style: italic;
+}
+
 /* header */
 
 header .avatar {
