@@ -1,5 +1,5 @@
 let constrain = 20;
-let mouseOverContainer = document.body;
+let mouseOverContainer = document.getElementById("header");
 let facingFaceImage = document.getElementById("my_avatar");
 
 function transforms(x, y, el) {
