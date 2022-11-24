@@ -1,6 +1,6 @@
 let constrain = 20;
 let mouseOverContainer = document.body;
-let ex1Layer = document.getElementById("my_avatar");
+let facingFaceImage = document.getElementById("my_avatar");
 
 function transforms(x, y, el) {
   let box = el.getBoundingClientRect();
@@ -18,9 +18,9 @@ function transforms(x, y, el) {
 
 mouseOverContainer.onmousemove = function(e) {
   let xy = [e.clientX, e.clientY];
-  let position = xy.concat([ex1Layer]);
+  let position = xy.concat([facingFaceImage]);
 
   window.requestAnimationFrame(function(){
-    transformElement(ex1Layer, position);
+    transformElement(facingFaceImage, position);
   });
 };
