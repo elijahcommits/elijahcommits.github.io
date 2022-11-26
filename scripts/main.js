@@ -25,19 +25,15 @@ function transformElement(el, xyEl) {
 //  to center (undo transform)
 // ============================
 
-function unTransforms(x, y, el) {
+function undoTransformElement(el) {
   let box = el.getBoundingClientRect();
   let calcX = -(box.x / 2) / constrain;
   let calcY = (box.y / 2) / constrain;
-  
-  return "perspective(none) "
-    + "   rotateX("+ calcX +"deg) "
-    + "   rotateY("+ calcY +"deg) ";
-};
 
-function unTransformElement(el, xyEl) {
-  el.style.transform = unTransforms.apply(null, xyEl);
-}
+  el.style.transform = "perspective(none) "
+                  + "   rotateX("+ calcX +"deg) "
+                  + "   rotateY("+ calcY +"deg) ";
+};
 
 // ===============
 //  on mouse move
@@ -57,10 +53,7 @@ mouseOverContainer.onmousemove = function(e) {
 // ================
 
 mouseOverContainer.onmouseleave = function(e) {
-  let xy = [e.clientX, e.clientY];
-  let position = xy.concat([facingFaceImage]);
-
   window.requestAnimationFrame(function(){
-    unTransformElement(facingFaceImage, position);
+    undoTransformElement(facingFaceImage);
   });
 };
