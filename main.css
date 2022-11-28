@@ -13,6 +13,7 @@
   --seafoam: hsl(162, 55%, 54%);
   --seafoam-darker: hsl(162, 48%, 40%);
   --seafoam-darkest: hsl(162, 48%, 33%);
+  --oblue: hsl(203, 100%, 93%);
 }
 
 header {
@@ -20,7 +21,7 @@ header {
 }
 
 body {
-  background-color: hsl(203, 100%, 93%);
+  background-color: var(--oblue);
   text-align: center;
   font-family: sans-serif;
 }
@@ -57,14 +58,27 @@ header .avatar {
 }
 
 .main_title {
-  color: hsl(210, 53%, 43%);
+  /* color: hsl(210, 53%, 43%); */
+  color: hwb(203 64% 0%);
+  text-shadow: #222 0px 0px 1px,
+                #222 0px 0px 3px,
+                #222 0px 0px 5px,
+                /* #222 0px 0px 9px, */
+                /* #222 0px 0px 12px, */
+              hsl(282, 64%, 42%) 0px 8px 10px,
+              hsl(282, 64%, 42%) 0px 24px 10px;
   margin-top: 0.1rem;
   font-size: 1.8rem;
   font-weight: 900;
+  letter-spacing: 1.2px;
 }
 
 .main_subtitle {
-  color: hsl(0, 0%, 28%);
+  /* color: hsl(287, 14%, 87%); */
+  color: var(--oblue);
+  text-shadow: #000 0px 0px 3px, 
+              hsl(282, 64%, 42%) 0px 0px 5px,
+              hsl(282, 64%, 42%) 0px 0px 10px;
   font-size: 0.8rem;
   letter-spacing: 1px;
 }
