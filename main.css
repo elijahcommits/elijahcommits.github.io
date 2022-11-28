@@ -59,17 +59,23 @@ header .avatar {
 
 .main_title {
   /* color: hsl(210, 53%, 43%); */
-  color: hsl(203, 100%, 93%);
+  color: var(--seafoam-lighter);
   text-shadow: #222 0px 0px 1px,
                 #222 0px 0px 3px,
                 #222 0px 0px 5px,
                 /* #222 0px 0px 9px, */
                 /* #222 0px 0px 12px, */
+              hsl(282, 64%, 42%) 0px -8px 10px,
               hsl(282, 64%, 42%) 0px 8px 10px,
+              hsl(282, 64%, 42%) -8px 0px 10px,
+              hsl(282, 64%, 42%) 8px 0px 10px,
+              hsl(282, 64%, 42%) 0px 4px 6px,
+              hsl(282, 64%, 42%) 0px 2px 3px,
+              hsl(282, 64%, 42%) 0px -2px 3px,
               hsl(282, 64%, 42%) 0px 24px 10px;
   margin-top: 0.1rem;
   font-size: 1.8rem;
-  font-weight: 900;
+  font-weight: 800;
   letter-spacing: 1.2px;
 }
 
