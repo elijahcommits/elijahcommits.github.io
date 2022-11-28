@@ -5,7 +5,7 @@ let facingFaceImage = document.getElementById("my_avatar");
 //  follow mouse (transform)
 // ==========================
 
-let constrain = 20;
+let constrain = 8;
 
 function transforms(x, y, el) {
   let box = el.getBoundingClientRect();
