@@ -53,10 +53,11 @@ header .avatar {
   margin-top: 0.5rem;
   border-radius: 1000px;
   transition: all 0.15s ease-out;
-  box-shadow: 0 0 5px #222, 0 0 6px var(--seafoam-darkest), 0 0 15px var(--seafoam-lightest);
+  box-shadow: 0 0 5px #222, 0 0 6px hsl(162, 48%, 33%), 0 0 15px hsl(162, 100%, 68%);
 }
 
 .main_title {
+  color: hsl(210, 53%, 43%);
   margin-top: 0.1rem;
   font-size: 1.8rem;
   font-weight: 900;
