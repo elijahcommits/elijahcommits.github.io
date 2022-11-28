@@ -59,7 +59,7 @@ header .avatar {
 
 .main_title {
   /* color: hsl(210, 53%, 43%); */
-  color: hwb(203 64% 0%);
+  color: hsl(203, 100%, 93%);
   text-shadow: #222 0px 0px 1px,
                 #222 0px 0px 3px,
                 #222 0px 0px 5px,
