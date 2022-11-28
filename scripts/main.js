@@ -1,11 +1,12 @@
-let mouseOverContainer = document.getElementById("header");
+// let mouseOverContainer = document.getElementById("header");
+let mouseOverContainer = document.body;
 let facingFaceImage = document.getElementById("my_avatar");
 
 // ==========================
 //  follow mouse (transform)
 // ==========================
 
-let constrain = 8;
+let constrain = 15;
 
 function transforms(x, y, el) {
   let box = el.getBoundingClientRect();
