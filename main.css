@@ -7,6 +7,14 @@
   box-sizing: border-box;
 }
 
+:root {
+  --seafoam-lightest: hsl(162, 100%, 68%);
+  --seafoam-lighter: hsl(162, 84%, 64%);
+  --seafoam: hsl(162, 55%, 54%);
+  --seafoam-darker: hsl(162, 48%, 40%);
+  --seafoam-darkest: hsl(162, 48%, 33%);
+}
+
 header {
   margin-bottom: 1rem;
 }
@@ -37,10 +45,6 @@ em {
   font-style: italic;
 }
 
-/* .flex {
-  display: flex;
-} */
-
 /* header */
 
 header .avatar {
@@ -49,6 +53,7 @@ header .avatar {
   margin-top: 0.5rem;
   border-radius: 1000px;
   transition: all 0.15s ease-out;
+  box-shadow: 0 0 5px #222, 0 0 6px var(--seafoam-darkest), 0 0 15px var(--seafoam-lightest);
 }
 
 .main_title {
