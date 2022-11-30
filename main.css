@@ -16,10 +16,6 @@
   --oblue: hsl(203, 100%, 93%);
 }
 
-header {
-  margin-bottom: 1rem;
-}
-
 body {
   background-color: var(--oblue);
   text-align: center;
@@ -30,6 +26,10 @@ section {
   /* margin: 0 auto; */
   margin-top: 1rem;
   /* margin-bottom: 2.5rem; */
+}
+
+main {
+  margin-bottom: 1rem;
 }
 
 a {
@@ -58,7 +58,12 @@ em {
 
 /* header */
 
+header {
+  margin-bottom: 1rem;
+}
+
 header .avatar {
+  margin-top: 1rem;
   max-height: 100px;
   max-width: 100px;
   margin-top: 0.5rem;
