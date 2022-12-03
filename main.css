@@ -107,7 +107,7 @@ header .avatar {
 
 section.social-links {
   /* background: rgba(255, 0, 0, 0.2); */
-  width: min-content;
+  /* width: min-content; */
   margin: 0 auto;
 }
 
@@ -124,14 +124,14 @@ section.social-links {
 }
 
 .social-links__link + .social-links__link {
-  margin-top: 0.75rem;
+  margin-top: 0.7rem;
 }
 
 .social-links a {
   font-weight: 600;
   letter-spacing: 0.5px;
   text-decoration: none;
-  display: inline-block;
+  /* display: inline-block; */
   margin: 0 0.33rem;
 }
 
@@ -144,7 +144,12 @@ section.social-links {
 }
 
 .social-links__site {
-  color: black;
+  color: #222;
+}
+
+.social-links .social-links__site_subtext {
+  display: block;
+  font-size: 0.85rem;
 }
 
 /* my sites */
@@ -155,7 +160,7 @@ section.social-links {
 
 .my-sites a {
   text-decoration: none;
-  font-size: 1.2em;
+  font-size: 1.2;
 }
 
 .my-sites a:hover {
@@ -165,4 +170,9 @@ section.social-links {
 .my-sites .favicon__site {
   max-width: 16px;
   max-height: 16px;
+}
+
+.my-sites .my-sites__subtext {
+  display: block;
+  font-size: 0.85rem;
 }
