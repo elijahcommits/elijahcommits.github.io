@@ -2,6 +2,8 @@
 let mouseOverContainer = document.body;
 let facingFaceImage = document.getElementById("my_avatar");
 
+let followCursorEnabled = false;
+
 // ==========================
 //  follow mouse (transform)
 // ==========================
@@ -32,25 +34,36 @@ function resetElementTransform(el) {
                   + "   rotateY(0deg) ";
 };
 
-// ===============
-//  on mouse move
-// ===============
+// ================================
+//  on mouse move, transform image
+// ================================
 
 mouseOverContainer.onmousemove = function(e) {
   let xy = [e.clientX, e.clientY];
   let position = xy.concat([facingFaceImage]);
 
-  window.requestAnimationFrame(function(){
-    transformElement(facingFaceImage, position);
-  });
+  if (followCursorEnabled) {
+    window.requestAnimationFrame(function(){
+      transformElement(facingFaceImage, position);
+    });
+  }
 };
 
-// ================
-//  on mouse leave
-// ================
+// ==========================================
+//  when mouse leaves container, reset image
+// ==========================================
+
 
 mouseOverContainer.onmouseleave = function(e) {
   window.requestAnimationFrame(function(){
     resetElementTransform(facingFaceImage);
   });
 };
+
+  // =================================================
+  //  on avatar clicked, disable/enable cursor follow
+  // =================================================
+
+facingFaceImage.onmousedown = function() {
+  followCursorEnabled = !followCursorEnabled;
+}
