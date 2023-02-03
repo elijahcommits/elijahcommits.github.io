@@ -14,6 +14,9 @@
   --seafoam-darker: hsl(162, 48%, 40%);
   --seafoam-darkest: hsl(162, 48%, 33%);
   --oblue: hsl(203, 100%, 93%);
+  --subtext_box-bg: hsl(207, 100%, 98%);
+  --subtext_box-border: hsl(0, 0%, 85%);
+  --subtext_box-text: hsl(0, 0%, 20%);
 }
 
 body {
@@ -150,7 +153,15 @@ section.social-links {
 
 .social-links .social-links__site_subtext {
   display: block;
-  font-size: 0.85rem;
+  font-size: 0.88rem;
+  border: 1px solid var(--subtext_box-border);
+  background-color: var(--subtext_box-bg);
+  border-radius: 5px;
+  padding: 1px;
+  margin-top: 2px;
+}
+.social-links .social-links__site_subtext p {
+  color: var(--subtext_box-text);
 }
 
 /* my sites */
