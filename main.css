@@ -139,7 +139,7 @@ section.social-links {
   margin: 0 0.33rem;
 }
 
-.social-links__user {
+.social-links__user + .social-links__linktitle {
   font-size: 1.2em;
 }
 
