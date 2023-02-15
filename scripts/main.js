@@ -1,4 +1,7 @@
-// let mouseOverContainer = document.getElementById("header");
+// ====================
+//  avatar mousefollow
+// ====================
+
 let mouseOverContainer = document.body;
 let facingFaceImage = document.getElementById("my_avatar");
 
@@ -7,6 +10,7 @@ let followCursorEnabled = false;
 // ==========================
 //  follow mouse (transform)
 // ==========================
+
 
 let constrain = 15;
 
@@ -60,10 +64,34 @@ mouseOverContainer.onmouseleave = function(e) {
   });
 };
 
-  // =================================================
-  //  on avatar clicked, disable/enable cursor follow
-  // =================================================
+  // ===============================================
+  //  on avatar clicked, disable/enable mousefollow
+  // ===============================================
 
 facingFaceImage.onmousedown = function() {
   followCursorEnabled = !followCursorEnabled;
 }
+
+
+// ------------------------------------------------------
+// ------------------------------------------------------
+
+
+
+// ===================
+//  scroll down arrow
+// ===================
+
+const arrow = document.querySelector('#arrow_down');
+
+window.addEventListener('scroll', () => {
+  const scrollHeight = document.documentElement.scrollHeight;
+  const scrollTop = document.documentElement.scrollTop;
+  const clientHeight = document.documentElement.clientHeight;
+
+  if (scrollTop + clientHeight >= scrollHeight - 60) {
+    arrow.style.opacity = 0;
+  } else {
+    arrow.style.opacity = 1;
+  }
+});

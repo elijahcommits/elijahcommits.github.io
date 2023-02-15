@@ -59,6 +59,28 @@ em {
   font-style: italic;
 }
 
+    /* scroll down arrow */
+#arrow_down {
+  color: hsl(0, 0%, 0%);
+  font-size: 1.5rem;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+  animation: moveUpDown 1s ease-in-out infinite alternate;
+}
+
+@keyframes moveUpDown {
+  0% {
+    transform: translateY(0);
+  }
+  100% {
+    transform: translateY(-10px);
+  }
+}
+    /* END scroll down arrow */
+
 /* header */
 
 header {
