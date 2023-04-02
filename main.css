@@ -158,7 +158,7 @@ section.social-links {
   letter-spacing: 0.5px;
   text-decoration: none;
   /* display: inline-block; */
-  margin: 0 0.33rem;
+  /* margin: 0 0.33rem; */
 }
 
 .social-links__user + .social-links__linktitle {
