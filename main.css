@@ -188,9 +188,10 @@ section.social-links {
 
 /* my sites */
 
-/* .my-sites {
+.my-sites {
   max-width: 90%;
-} */
+  margin: 0 auto;
+}
 
 .my-sites .site + .site {
   margin-top: 0.7rem;
