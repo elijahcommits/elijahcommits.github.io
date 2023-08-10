@@ -188,8 +188,8 @@ section.social-links {
 
 /* my sites */
 
-.my-sites .site {
-  max-width: 95%;
+.my-sites {
+  max-width: 90%;
 }
 
 .my-sites .site + .site {
