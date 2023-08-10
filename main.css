@@ -190,7 +190,7 @@ section.social-links {
 
 .my-sites {
   max-width: 90%;
-  margin: 0 auto;
+  margin: 1rem auto;
 }
 
 .my-sites .site + .site {
