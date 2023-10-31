@@ -91,6 +91,8 @@ window.addEventListener('scroll', () => {
 
   if (scrollTop + clientHeight >= scrollHeight - 60) {
     arrow.style.opacity = 0;
+  } else if (scrollTop === 0) {
+    arrow.style.opacity = 0;
   } else {
     arrow.style.opacity = 1;
   }
