@@ -82,22 +82,44 @@ facingFaceImage.onmousedown = function() {
 //  scroll down arrow
 // ===================
 
+// Element
 const arrow = document.querySelector('#arrow_down');
 
-window.addEventListener('scroll', () => {
+// Scrollbar check  
+let hasScrollbar = hasScrollBar(); 
 
-  // Calculate scroll bottom
-  const scrollHeight = document.documentElement.scrollHeight;
-  const clientHeight = document.documentElement.clientHeight;  
-  scrollBottom = scrollHeight - clientHeight - document.documentElement.scrollTop;
+setInterval(() => {
+  const newHasScrollbar = hasScrollBar();
+  if (newHasScrollbar !== hasScrollbar) {
+    hasScrollbar = newHasScrollbar;
+    updateArrow();
+  }
+}, 100);
 
-  // Check if at bottom
-  if (scrollBottom <= 60) {
-    arrow.style.opacity = 0; 
-  } 
-  // Scrolled away from bottom
-  else {
+function hasScrollBar() {
+  return document.body.scrollHeight > window.innerHeight;
+}
+
+// Fade logic
+function updateArrow() {
+
+  if (!hasScrollbar) {
+    arrow.style.opacity = 0;
+    return; 
+  }
+
+  const scrollBottom = document.body.scrollHeight - window.innerHeight - window.scrollY;
+
+  if (scrollBottom < 100) {
+    arrow.style.opacity = 0;
+  } else {
     arrow.style.opacity = 1;
   }
 
-});
+}
+
+// Initialize
+updateArrow();
+
+// Scroll event
+window.addEventListener('scroll', updateArrow);
