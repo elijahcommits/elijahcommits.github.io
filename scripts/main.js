@@ -85,13 +85,19 @@ facingFaceImage.onmousedown = function() {
 const arrow = document.querySelector('#arrow_down');
 
 window.addEventListener('scroll', () => {
-  const scrollHeight = document.documentElement.scrollHeight;
-  const scrollTop = document.documentElement.scrollTop;
-  const clientHeight = document.documentElement.clientHeight;
 
-  if (scrollTop + clientHeight >= scrollHeight - 60 || scrollTop == 0) {
-    arrow.style.opacity = 0;
-  } else {
+  // Calculate scroll bottom
+  const scrollHeight = document.documentElement.scrollHeight;
+  const clientHeight = document.documentElement.clientHeight;  
+  scrollBottom = scrollHeight - clientHeight - document.documentElement.scrollTop;
+
+  // Check if at bottom
+  if (scrollBottom <= 60) {
+    arrow.style.opacity = 0; 
+  } 
+  // Scrolled away from bottom
+  else {
     arrow.style.opacity = 1;
   }
+
 });
