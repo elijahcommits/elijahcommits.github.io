@@ -82,44 +82,48 @@ facingFaceImage.onmousedown = function() {
 //  scroll down arrow
 // ===================
 
-// Element
-const arrow = document.querySelector('#arrow_down');
+document.addEventListener('DOMContentLoaded', () => {
 
-// Scrollbar check  
-let hasScrollbar = hasScrollBar(); 
+  // Element
+  const arrow = document.querySelector('#arrow_down');
 
-setInterval(() => {
-  const newHasScrollbar = hasScrollBar();
-  if (newHasScrollbar !== hasScrollbar) {
-    hasScrollbar = newHasScrollbar;
-    updateArrow();
-  }
-}, 100);
+  // Scrollbar check 
+  let hasScrollbar = hasScrollBar();
 
-function hasScrollBar() {
-  return document.body.scrollHeight > window.innerHeight;
-}
+  setInterval(() => {
+    const newHasScrollbar = hasScrollBar();
+    if (newHasScrollbar !== hasScrollbar) {
+      hasScrollbar = newHasScrollbar;
+      updateArrow();
+    }  
+  }, 100);
 
-// Fade logic
-function updateArrow() {
-
-  if (!hasScrollbar) {
-    arrow.style.opacity = 0;
-    return; 
+  function hasScrollBar() {
+    return document.body.scrollHeight > window.innerHeight;
   }
 
-  const scrollBottom = document.body.scrollHeight - window.innerHeight - window.scrollY;
+  // Fade logic
+  function updateArrow() {
 
-  if (scrollBottom < 100) {
-    arrow.style.opacity = 0;
-  } else {
-    arrow.style.opacity = 1;
-  }
+    if(!hasScrollbar) {
+      arrow.style.opacity = 0;
+      return;
+    }
+    
+    const scrollBottom = document.body.scrollHeight - window.innerHeight - window.scrollY;
 
-}
+    if (scrollBottom < 100) {
+      arrow.style.opacity = 0;
+    } else {
+      arrow.style.opacity = 1;
+    }
 
-// Initialize
-updateArrow();
+  }  
 
-// Scroll event
-window.addEventListener('scroll', updateArrow);
+  // Initialize
+  updateArrow();
+
+  // Scroll event
+  window.addEventListener('scroll', updateArrow);
+
+});
