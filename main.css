@@ -14,13 +14,17 @@
   --seafoam-darker: hsl(162, 48%, 40%);
   --seafoam-darkest: hsl(162, 48%, 33%);
   --oblue: hsl(203, 100%, 93%);
+  --oblue-darker: hsl(203, 50%, 66%);
+  --oblue-darkest: hsl(203, 40%, 40%);
   --subtext_box-bg: hsl(207, 100%, 98%);
   --subtext_box-border: hsl(0, 0%, 85%);
   --subtext_box-text: hsl(0, 0%, 20%);
 }
 
 body {
-  background-color: var(--oblue);
+  /* background-color: var(--oblue); */
+  background: rgb(2,0,36);
+  background: radial-gradient(circle, var(--oblue) 35%, var(--oblue-darker) 70%, var(--oblue-darkest));
   text-align: center;
   font-family: sans-serif;
 }
