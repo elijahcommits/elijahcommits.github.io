@@ -125,8 +125,10 @@ header #my_avatar {
   text-shadow: #000 0px 0px 3px, 
               hsl(282, 64%, 42%) 0px 0px 5px,
               hsl(282, 64%, 42%) 0px 0px 10px;
-  font-size: 0.8rem;
+  /* font-size: 0.8rem; */
+  font-size: 0.95rem;
   letter-spacing: 1px;
+  margin-top: 13px;
 }
 
 /* social links */
