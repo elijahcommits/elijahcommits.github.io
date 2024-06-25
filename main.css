@@ -171,10 +171,6 @@ section.social-links {
   font-weight: 900;
 }
 
-.social-links__user {
-  margin-right: 3px;
-}
-
 .social-links__user + .social-links__linktitle {
   font-size: 1.2em;
 }
@@ -182,6 +178,7 @@ section.social-links {
 .social-links__site {
   color: #222;
   font-style: normal;
+  margin-left: 0.5rem;
 }
 
 .social-links__site:hover {
