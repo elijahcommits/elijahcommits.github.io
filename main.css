@@ -16,9 +16,14 @@
   --oblue: hsl(203, 100%, 93%);
   --oblue-darker: hsl(203, 50%, 66%);
   --oblue-darkest: hsl(203, 40%, 40%);
+  --purpp: hsl(282, 64%, 42%);
   --subtext_box-bg: hsl(207, 100%, 98%);
   --subtext_box-border: hsl(0, 0%, 85%);
   --subtext_box-text: hsl(0, 0%, 20%);
+  --avatar_halo-text-inner: hsl(0, 0%, 0%);
+  --avatar_halo-text-middle: hsl(0, 0%, 50%);
+  --avatar_halo-text-outer: hsl(0, 0%, 100%);
+  /* --avatar_halo-text-outer: hsl(282, 64%, 42%); */
 }
 
 body {
@@ -97,7 +102,8 @@ header #my_avatar {
   max-width: 100px;
   border-radius: 1000px;
   transition: all 0.15s ease-out;
-  box-shadow: 0 0 5px #222, 0 0 6px hsl(162, 48%, 33%), 0 0 15px hsl(162, 100%, 68%);
+  /* box-shadow: 0 0 5px #222, 0 0 6px hsl(162, 48%, 33%), 0 0 15px hsl(162, 100%, 68%); */
+  box-shadow: 0 0 5px var(--avatar_halo-text-inner), 0 0 6px var(--avatar_halo-text-middle), 0 0 15px var(--avatar_halo-text-outer);
   cursor: pointer;
 }
 
