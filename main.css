@@ -20,7 +20,8 @@
   --subtext_box-bg: hsl(207, 100%, 98%);
   --subtext_box-border: hsl(0, 0%, 85%);
   --subtext_box-text: hsl(0, 0%, 20%);
-  --avatar_halo-text-inner: hsl(0, 0%, 0%);
+  /* --avatar_halo-text-inner: hsl(0, 0%, 0%); */
+  --avatar_halo-text-inner: #222;
   --avatar_halo-text-middle: hsl(0, 0%, 50%);
   --avatar_halo-text-outer: hsl(0, 0%, 100%);
   /* --avatar_halo-text-outer: hsl(282, 64%, 42%); */
